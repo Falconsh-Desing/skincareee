@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Skin | Skincare esencial</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Cinzel:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="glass-container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <div class="nav-container">
+
+                <div class="logo">
+                    <h2>Aura Skin</h2>
+                    <span class="logo-tag">skincare esencial</span>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Tu rutina de skincare <br>
+                    comienza aquí
+                </h1>
+
+                <p class="hero-subtitle">
+                    Productos conscientes, piel radiante
+                </p>
+
+                <a href="#productos" class="btn btn-primary">
+                    Comprar ahora
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="benefits" id="beneficios">
+
+            <div class="section-header">
+                <span class="section-tag">Por qué Aura Skin</span>
+                <h2>Skincare con propósito</h2>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Ingredientes naturales</h3>
+                    <p>Fórmulas limpias con extractos botánicos y sin crueldad animal.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Envío seguro</h3>
+                    <p>Entregas rápidas con empaques protegidos.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Asesoría personalizada</h3>
+                    <p>Te ayudamos a elegir la mejor rutina para tu piel.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Envases sostenibles</h3>
+                    <p>Comprometidos con el cuidado de tu piel y del planeta.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="products-section" id="productos">
+
+            <div class="section-header">
+                <span class="section-tag">Catálogo</span>
+                <h2>Descubre tu nueva rutina</h2>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filters-bar">
+
+                <button class="filter-btn active" data-category="todos">
+                    Todos
+                </button>
+
+                <button class="filter-btn" data-category="limpiadores">
+                    Limpiadores
+                </button>
+
+                <button class="filter-btn" data-category="serums">
+                    Sérums
+                </button>
+
+                <button class="filter-btn" data-category="hidratantes">
+                    Hidratantes
+                </button>
+
+                <button class="filter-btn" data-category="protectores">
+                    Protectores
+                </button>
+
+                <button class="filter-btn" data-category="mascarillas">
+                    Mascarillas
+                </button>
+
+                <button class="filter-btn" data-category="accesorios">
+                    Accesorios
+                </button>
+
+            </div>
+
+            <!-- GRID PRODUCTOS -->
+            <div class="products-grid" id="productosContainer">
+
+                <!-- LAS TARJETAS SE CARGAN DESDE JAVASCRIPT -->
+
+            </div>
+
+        </section>
+<!-- CONTACTO -->
+<section class="contacto-moderno" id="contacto">
+
+    <div class="section-header">
+        <span class="section-tag">Ayuda y contacto</span>
+        <h2>¿Necesitas ayuda?</h2>
+        <p class="section-subtitle">
+            Estamos aquí para ayudarte con cualquier duda
+        </p>
+    </div>
+
+    <div class="contacto-wrapper">
+
+        <!-- Columna izquierda: Contacto -->
+        <div class="contacto-info">
+            <div class="contacto-tarjeta">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p>+53 5853 6942</p>
+                <small>Respuesta rápida</small>
+            </div>
+
+            <div class="contacto-tarjeta">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>auraskin@skincare.com</p>
+                <small>Atención personalizada</small>
+            </div>
+
+            <div class="contacto-tarjeta">
+                <i class="fas fa-clock"></i>
+                <h3>Horario</h3>
+                <p>Lunes a Viernes</p>
+                <small>9:00am - 6:00pm</small>
+            </div>
+        </div>
+
+        <!-- Columna derecha: FAQ -->
+        <div class="faq-moderno">
+            <div class="faq-item">
+                <div class="faq-pregunta">
+                    <i class="fas fa-credit-card"></i>
+                    <h4>¿Qué métodos de pago aceptan?</h4>
+                </div>
+                <div class="faq-respuesta">
+                    <p>Aceptamos efectivo, transferencia y tarjetas de débito/crédito. Todos los métodos son seguros.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-pregunta">
+                    <i class="fas fa-truck"></i>
+                    <h4>¿Cuánto demora el envío?</h4>
+                </div>
+                <div class="faq-respuesta">
+                    <p>Las entregas se realizan en 24-48 horas hábiles. Para zonas cercanas, el mismo día.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-pregunta">
+                    <i class="fas fa-question-circle"></i>
+                    <h4>¿Cómo elijo mis productos?</h4>
+                </div>
+                <div class="faq-respuesta">
+                    <p>¡Te ayudamos! Escríbenos por WhatsApp y te asesoramos sin costo para encontrar tu rutina ideal.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <h3>Aura Skin</h3>
+                    <p>Skincare esencial</p>
+                </div>
+
+                <div class="footer-social">
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © 2025 Aura Skin. Todos los derechos reservados.
+                </p>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- MODAL -->
+    <div class="modal" id="productModal">
+
+        <div class="modal-content glass-modal">
+
+            <span class="modal-close">&times;</span>
+
+            <div class="modal-grid">
+
+                <div class="modal-gallery">
+
+                    <img
+                        src=""
+                        alt=""
+                        id="modalImage"
+                        class="modal-image">
+
+                </div>
+
+                <div class="modal-info">
+
+                    <h2 id="modalTitle"></h2>
+
+                    <p class="modal-category" id="modalCategory"></p>
+
+                    <div class="modal-price" id="modalPrice"></div>
+
+                    <div class="modal-description">
+                        <h4>Descripción</h4>
+                        <p id="modalDesc"></p>
+                    </div>
+
+                    <div class="modal-benefits">
+                        <h4>Beneficios</h4>
+                        <p id="modalBenefits"></p>
+                    </div>
+
+                    <div class="modal-skin">
+                        <h4>Tipo de piel</h4>
+                        <p id="modalSkin"></p>
+                    </div>
+
+                    <button class="btn btn-primary btn-add-cart" id="modalAddToCart">
+                        <i class="fas fa-bag-shopping"></i>
+                        Agregar al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARRITO -->
+    <div class="cart-sidebar" id="cartSidebar">
+
+        <div class="glass-cart">
+
+            <div class="cart-header">
+
+                <h3>
+                    Mi carrito
+                    <i class="fas fa-bag-shopping"></i>
+                </h3>
+
+                <span class="close-cart" id="closeCart">
+                    &times;
+                </span>
+
+            </div>
+
+            <div class="cart-items" id="cartItems">
+
+                <p style="text-align: center; color: #4A3728;">
+                    Carrito vacío
+                </p>
+
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">0 CUP</span>
+                </div>
+
+                <button class="btn btn-whatsapp" id="checkoutBtn">
+                    <i class="fab fa-whatsapp"></i>
+                    Enviar pedido
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>               
